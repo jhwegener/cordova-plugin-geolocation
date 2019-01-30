@@ -25,13 +25,15 @@ description: Access GPS data.
 |:-:|:-:|
 |[![Build status](https://ci.appveyor.com/api/projects/status/github/apache/cordova-plugin-geolocation?branch=master)](https://ci.appveyor.com/project/ApacheSoftwareFoundation/cordova-plugin-geolocation)|[![Build Status](https://travis-ci.org/apache/cordova-plugin-geolocation.svg?branch=master)](https://travis-ci.org/apache/cordova-plugin-geolocation)|
 
-# cordova-plugin-geolocation
-
-## CHANGES in src/ios/CDVLocation.m 
+## CHANGES made in this fork: 
+* in src/ios/CDVLocation.m 
 ```
     -        self.locationManager.distanceFilter = 5;
     +        self.locationManager.distanceFilter = kCLDistanceFilterNone;
 ```
+
+
+# cordova-plugin-geolocation
 
 
 This plugin provides information about the device's location, such as

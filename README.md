@@ -27,8 +27,8 @@ description: Access GPS data.
 
 ## CHANGES made in this fork: 
 * in src/ios/CDVLocation.m
- * https://stackoverflow.com/questions/30989428/apache-cordova-geolocation-watchposition-times-out-on-ios-when-standing-still
- * https://stackoverflow.com/questions/37074418/cordova-ionic-geolocation-fails-position-retrieval-timed-out-error-code-3-on-i 
+	* https://stackoverflow.com/questions/30989428/apache-cordova-geolocation-watchposition-times-out-on-ios-when-standing-still
+	* https://stackoverflow.com/questions/37074418/cordova-ionic-geolocation-fails-position-retrieval-timed-out-error-code-3-on-i 
 ```
     -        self.locationManager.distanceFilter = 5;
     +        self.locationManager.distanceFilter = kCLDistanceFilterNone;

@@ -27,7 +27,7 @@ description: Access GPS data.
 
 # cordova-plugin-geolocation
 
-CHANGES in src/ios/CDVLocation.m 
+## CHANGES in src/ios/CDVLocation.m 
 ```
     -        self.locationManager.distanceFilter = 5;
     +        self.locationManager.distanceFilter = kCLDistanceFilterNone;

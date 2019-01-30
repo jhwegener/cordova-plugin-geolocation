@@ -26,7 +26,9 @@ description: Access GPS data.
 |[![Build status](https://ci.appveyor.com/api/projects/status/github/apache/cordova-plugin-geolocation?branch=master)](https://ci.appveyor.com/project/ApacheSoftwareFoundation/cordova-plugin-geolocation)|[![Build Status](https://travis-ci.org/apache/cordova-plugin-geolocation.svg?branch=master)](https://travis-ci.org/apache/cordova-plugin-geolocation)|
 
 ## CHANGES made in this fork: 
-* in src/ios/CDVLocation.m 
+* in src/ios/CDVLocation.m
+** https://stackoverflow.com/questions/30989428/apache-cordova-geolocation-watchposition-times-out-on-ios-when-standing-still
+** https://stackoverflow.com/questions/37074418/cordova-ionic-geolocation-fails-position-retrieval-timed-out-error-code-3-on-i 
 ```
     -        self.locationManager.distanceFilter = 5;
     +        self.locationManager.distanceFilter = kCLDistanceFilterNone;
